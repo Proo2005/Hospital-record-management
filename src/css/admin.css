@@ -1,0 +1,93 @@
+.admin-container {
+  padding: 2rem;
+  background: #0a0a0a;
+  color: white;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.admin-header {
+  margin-bottom: 1rem;
+}
+
+.card-box {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  backdrop-filter: blur(6px);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.scheduled { color: #4caf50; }
+.cancelled { color: #f44336; }
+.pending { color: #ff9800; }
+
+.appointment-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #111;
+}
+
+.appointment-table th, .appointment-table td {
+  padding: 12px;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.status-btn {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+}
+
+.status-btn.pending { background-color: #ff9800; }
+.status-btn.scheduled { background-color: #4caf50; }
+.status-btn.cancelled { background-color: #f44336; }
+
+.popup-box, .otp-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  color: white;
+  min-width: 300px;
+}
+
+.popup-box button,
+.otp-box button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.otp-box input {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+}
